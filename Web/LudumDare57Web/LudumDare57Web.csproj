@@ -1,0 +1,71 @@
+<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+
+  <PropertyGroup>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <RootNamespace>LudumDare57Web</RootNamespace>
+    <AssemblyName>Earth Below</AssemblyName>
+    <DefineConstants>$(DefineConstants);BLAZORGL</DefineConstants>
+	<KniPlatform>BlazorGL</KniPlatform>
+  </PropertyGroup>
+  
+  <PropertyGroup>
+    <BlazorEnableTimeZoneSupport>false</BlazorEnableTimeZoneSupport>
+    <Authors>Whateverdat</Authors>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Base\ParallaxLayer.cs" />
+    <Compile Include="Base\Scene.cs" />
+    <Compile Include="Base\Sprite.cs" />
+    <Compile Include="Entities\Enemy.cs" />
+    <Compile Include="Entities\Player.cs" />
+    <Compile Include="Entities\Projectile.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="Interface\TextRenderer.cs" />
+    <Compile Include="Interface\TileMap.cs" />
+    <Compile Include="Managers\AudioManager.cs" />
+    <Compile Include="Managers\ParallaxManager.cs" />
+    <Compile Include="Managers\SceneManager.cs" />
+    <Compile Include="Pages\Index.razor.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="LudumDare57WebGame.cs" />
+    <Compile Include="Scenes\GameScene.cs" />
+    <Compile Include="Scenes\StartScene.cs" />
+    <Compile Include="Scenes\TitleScene.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="nkast.Xna.Framework" Version="3.13.9001" />
+    <PackageReference Include="nkast.Xna.Framework.Content" Version="3.13.9001" />
+    <PackageReference Include="nkast.Xna.Framework.Graphics" Version="3.13.9001" />
+    <PackageReference Include="nkast.Xna.Framework.Audio" Version="3.13.9001" />
+    <PackageReference Include="nkast.Xna.Framework.Media" Version="3.13.9001" />
+    <PackageReference Include="nkast.Xna.Framework.Input" Version="3.13.9001" />
+    <PackageReference Include="nkast.Xna.Framework.Game" Version="3.13.9001" />
+    <PackageReference Include="nkast.Xna.Framework.Blazor" Version="3.13.9001" />
+    <PackageReference Include="nkast.Xna.Framework.Content.Pipeline.Builder" Version="3.13.9001" />
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net6.0' ">
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.32" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.32" PrivateAssets="all" />
+  </ItemGroup>
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net8.0' ">
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="8.0.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="8.0.7" PrivateAssets="all" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <KniContentReference Include="Content\LudumDare57WebContent.mgcb" />
+  </ItemGroup>
+
+</Project>
