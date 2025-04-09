@@ -5,7 +5,7 @@
 
 
 ## About
-"It's LudumDare57 project. Game scanario: the goal is to go up!"
+"It's LudumDare57 project. Game scenario: the goal is to go up!"
 
 ## Screenshots
 ![W11](Images/sshot01.png)
@@ -13,10 +13,9 @@
 ![W11](Images/sshot03.png)
 ![W11](Images/sshot04.png)
 
-## Controls & scenario
-- Use WASD to move. 
+## Controls- Use WASD to move. 
 - LEFT CLICK to add/remove blocks anywhere on screen.
-- You can use SHIFT to no to fall from the edge. The goal is to go up.
+- You can use SHIFT to no to fall from the edge!
 
 ## My 2 cents
 -  NET -> UWP
