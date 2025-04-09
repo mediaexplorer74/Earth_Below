@@ -13,7 +13,8 @@
 ![W11](Images/sshot03.png)
 ![W11](Images/sshot04.png)
 
-## Controls- Use WASD to move. 
+## Controls
+- Use WASD to move. 
 - LEFT CLICK to add/remove blocks anywhere on screen.
 - You can use SHIFT to no to fall from the edge!
 
