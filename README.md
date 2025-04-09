@@ -5,7 +5,10 @@
 
 
 ## About
-"It's LudumDare57 project. Game scenario: the goal is to go up!"
+
+It's LudumDare57 project. 
+
+Game scenario: the goal is to go up!
 
 ## Screenshots
 ![W11](Images/sshot01.png)
